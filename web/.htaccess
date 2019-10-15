@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "Your authorization required message."
+AuthUserFile /home/*********/public_html/.htpasswd
+require valid-user
+php_value display_errors 1
