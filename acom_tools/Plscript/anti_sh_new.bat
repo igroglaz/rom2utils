@@ -1,0 +1,1 @@
+C:\Perl\bin\perl.exe D:\Games\Allods\Plscript\anti_sh_new.pl 2>> D:\Games\Allods\logs\anti_sh_err.log

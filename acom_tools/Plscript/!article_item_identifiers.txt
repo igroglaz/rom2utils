@@ -1,0 +1,491 @@
+Bad None Cloak                               1111100010101011   F8AB
+Bad None Dress                               1111011110101110   F7AE
+Bad None Robe                                1111011110101101   F7AD
+Common Bronze Amulet                         0001010100000010   1502
+Common Bronze Bracers                        0001100100010100   1914
+Common Bronze Cuirass                        0001100000010010   1812
+Common Bronze Helm                           0001011000000110   1606
+Common Bronze Plate Boots                    0001110000011110   1C1E
+Common Bronze Plate Bracers                  0001100100010110   1916
+Common Bronze Plate Cuirass                  0001100000010011   1813
+Common Bronze Plate Helm                     0001011000001010   160A
+Common Bronze Scale Gauntlets                0001101000011010   1A1A
+Common Hard Leather Boots                    1011110000011100   BC1C
+Common Hard Leather Bracers                  1011100100010101   B915
+Common Hard Leather Gauntlets                1011101000011000   BA18
+Common Hard Leather Helm                     1011011000000111   B607
+Common Hard Leather Mail                     1011011100001111   B70F
+Common Iron Amulet                           0000010100000010   0502
+Common Iron Bracers                          0000100100010100   0914
+Common Iron Cuirass                          0000100000010010   0812
+Common Iron Helm                             0000011000000110   0606
+Common Iron Plate Boots                      0000110000011110   0C1E
+Common Iron Plate Bracers                    0000100100010110   0916
+Common Iron Plate Cuirass                    0000100000010011   0813
+Common Iron Plate Helm                       0000011000001010   060A
+Common Iron Scale Gauntlets                  0000101000011010   0A1A
+Common Leather Boots                         1010110000011100   AC1C
+Common Leather Bracers                       1010100100010101   A915
+Common Leather Gauntlets                     1010101000011000   AA18
+Common Leather Helm                          1010011000000111   A607
+Common Leather Mail                          1010011100001111   A70F
+Common None Cap                              1111011000000100   F604
+Common None Cape                             1111100000001100   F80C
+Common None Cloak                            1111100000001011   F80B
+Common None Dress                            1111011100001110   F70E
+Common None Gloves                           1111101000010111   FA17
+Common None Hat                              1111011000000011   F603
+Common None Low Hat                          1111011000000101   F605
+Common None Robe                             1111011100001101   F70D
+Common None Shoes                            1111110000011011   FC1B
+Elven Adamantium Amulet                      0110010110000010   6582
+Elven Adamantium Chain Mail                  0110011110010000   6790
+Elven Adamantium Full Helm                   0110011010001001   6689
+Elven Adamantium Helm                        0110011010000110   6686
+Elven Adamantium Ring                        0110010010000001   6481
+Elven Gold Amulet                            0100010110000010   4582
+Elven Meteoric Amulet                        0111010110000010   7582
+Elven Meteoric Chain Mail                    0111011110010000   7790
+Elven Meteoric Full Helm                     0111011010001001   7689
+Elven Meteoric Helm                          0111011010000110   7686
+Elven Meteoric Ring                          0111010010000001   7481
+Elven Mithrill Amulet                        0101010110000010   5582
+Elven Mithrill Chain Mail                    0101011110010000   5790
+Elven Mithrill Full Helm                     0101011010001001   5689
+Elven Mithrill Helm                          0101011010000110   5686
+Elven Mithrill Ring                          0101010010000001   5481
+Elven None Cap                               1111011010000100   F684
+Elven None Cape                              1111100010001100   F88C
+Elven None Dress                             1111011110001110   F78E
+Elven None Gloves                            1111101010010111   FA97
+Elven None Hat                               1111011010000011   F683
+Elven None Low Hat                           1111011010000101   F685
+Elven None Shoes                             1111110010011011   FC9B
+Good Gold Full Helm                          0100011011001001   46C9
+Good Gold Helm                               0100011011000110   46C6
+Good Gold Plate Cuirass                      0100100011010011   48D3
+Good Mithrill Cuirass                        0101100011010010   58D2
+Good Mithrill Full Helm                      0101011011001001   56C9
+Good None Cap                                1111011011000100   F6C4
+Good None Cloak                              1111100011001011   F8CB
+Good None Dress                              1111011111001110   F7CE
+Rare Adamantium Amulet                       0110010101000010   6542
+Rare Adamantium Bracers                      0110100101010100   6954
+Rare Adamantium Chain Boots                  0110110001011101   6C5D
+Rare Adamantium Chain Gauntlets              0110101001011001   6A59
+Rare Adamantium Chain Helm                   0110011001001000   6648
+Rare Adamantium Chain Mail                   0110011101010000   6750
+Rare Adamantium Cuirass                      0110100001010010   6852
+Rare Adamantium Full Helm                    0110011001001001   6649
+Rare Adamantium Helm                         0110011001000110   6646
+Rare Adamantium Plate Boots                  0110110001011110   6C5E
+Rare Adamantium Plate Bracers                0110100101010110   6956
+Rare Adamantium Plate Cuirass                0110100001010011   6853
+Rare Adamantium Plate Helm                   0110011001001010   664A
+Rare Adamantium Ring                         0110010001000001   6441
+Rare Adamantium Scale Gauntlets              0110101001011010   6A5A
+Rare Adamantium Scale Mail                   0110011101010001   6751
+Rare Hard Leather Boots                      1011110001011100   BC5C
+Rare Mithrill Amulet                         0101010101000010   5542
+Rare Mithrill Bracers                        0101100101010100   5954
+Rare Mithrill Chain Boots                    0101110001011101   5C5D
+Rare Mithrill Chain Gauntlets                0101101001011001   5A59
+Rare Mithrill Chain Helm                     0101011001001000   5648
+Rare Mithrill Chain Mail                     0101011101010000   5750
+Rare Mithrill Cuirass                        0101100001010010   5852
+Rare Mithrill Full Helm                      0101011001001001   5649
+Rare Mithrill Helm                           0101011001000110   5646
+Rare Mithrill Plate Boots                    0101110001011110   5C5E
+Rare Mithrill Plate Bracers                  0101100101010110   5956
+Rare Mithrill Plate Cuirass                  0101100001010011   5853
+Rare Mithrill Plate Helm                     0101011001001010   564A
+Rare Mithrill Ring                           0101010001000001   5441
+Rare Mithrill Scale Gauntlets                0101101001011010   5A5A
+Rare Mithrill Scale Mail                     0101011101010001   5751
+Rare None Cap                                1111011001000100   F644
+Rare None Cape                               1111100001001100   F84C
+Rare None Cloak                              1111100001001011   F84B
+Rare None Dress                              1111011101001110   F74E
+Rare None Gloves                             1111101001010111   FA57
+Rare None Hat                                1111011001000011   F643
+Rare None Low Hat                            1111011001000101   F645
+Rare None Robe                               1111011101001101   F74D
+Rare None Shoes                              1111110001011011   FC5B
+Rare Silver Amulet                           0011010101000010   3542
+Rare Silver Ring                             0011010001000001   3441
+Uncommon Bronze Bracers                      0001100100110100   1934
+Uncommon Bronze Cuirass                      0001100000110010   1832
+Uncommon Bronze Full Helm                    0001011000101001   1629
+Uncommon Bronze Helm                         0001011000100110   1626
+Uncommon Bronze Plate Boots                  0001110000111110   1C3E
+Uncommon Bronze Plate Bracers                0001100100110110   1936
+Uncommon Bronze Plate Cuirass                0001100000110011   1833
+Uncommon Bronze Plate Helm                   0001011000101010   162A
+Uncommon Bronze Scale Gauntlets              0001101000111010   1A3A
+Uncommon Bronze Scale Mail                   0001011100110001   1731
+Uncommon Hard Leather Boots                  1011110000111100   BC3C
+Uncommon Hard Leather Bracers                1011100100110101   B935
+Uncommon Hard Leather Gauntlets              1011101000111000   BA38
+Uncommon Hard Leather Helm                   1011011000100111   B627
+Uncommon Hard Leather Mail                   1011011100101111   B72F
+Uncommon Leather Boots                       1010110000111100   AC3C
+Uncommon Leather Bracers                     1010100100110101   A935
+Uncommon Leather Gauntlets                   1010101000111000   AA38
+Uncommon Leather Helm                        1010011000100111   A627
+Uncommon Leather Mail                        1010011100101111   A72F
+Uncommon None Cap                            1111011000100100   F624
+Uncommon None Cape                           1111100000101100   F82C
+Uncommon None Cloak                          1111100000101011   F82B
+Uncommon None Dress                          1111011100101110   F72E
+Uncommon None Gloves                         1111101000110111   FA37
+Uncommon None Hat                            1111011000100011   F623
+Uncommon None Low Hat                        1111011000100101   F625
+Uncommon None Robe                           1111011100101101   F72D
+Uncommon None Shoes                          1111110000111011   FC3B
+Uncommon Silver Amulet                       0011010100100010   3522
+Uncommon Silver Ring                         0011010000100001   3421
+Uncommon Steel Bracers                       0010100100110100   2934
+Uncommon Steel Chain Boots                   0010110000111101   2C3D
+Uncommon Steel Chain Gauntlets               0010101000111001   2A39
+Uncommon Steel Chain Helm                    0010011000101000   2628
+Uncommon Steel Chain Mail                    0010011100110000   2730
+Uncommon Steel Cuirass                       0010100000110010   2832
+Uncommon Steel Full Helm                     0010011000101001   2629
+Uncommon Steel Helm                          0010011000100110   2626
+Uncommon Steel Plate Boots                   0010110000111110   2C3E
+Uncommon Steel Plate Bracers                 0010100100110110   2936
+Uncommon Steel Plate Cuirass                 0010100000110011   2833
+Uncommon Steel Plate Helm                    0010011000101010   262A
+Uncommon Steel Scale Gauntlets               0010101000111010   2A3A
+Uncommon Steel Scale Mail                    0010011100110001   2731
+Very Rare Adamantium Amulet                  0110010101100010   6562
+Very Rare Adamantium Cuirass                 0110100001110010   6872
+Very Rare Adamantium Full Helm               0110011001101001   6669
+Very Rare Adamantium Helm                    0110011001100110   6666
+Very Rare Adamantium Plate Boots             0110110001111110   6C7E
+Very Rare Adamantium Plate Bracers           0110100101110110   6976
+Very Rare Adamantium Plate Cuirass           0110100001110011   6873
+Very Rare Adamantium Plate Helm              0110011001101010   666A
+Very Rare Adamantium Ring                    0110010001100001   6461
+Very Rare Adamantium Scale Gauntlets         0110101001111010   6A7A
+Very Rare Adamantium Scale Mail              0110011101110001   6771
+Very Rare Crystal Amulet                     1110010101100010   E562
+Very Rare Crystal Cuirass                    1110100001110010   E872
+Very Rare Crystal Plate Boots                1110110001111110   EC7E
+Very Rare Crystal Plate Bracers              1110100101110110   E976
+Very Rare Crystal Plate Cuirass              1110100001110011   E873
+Very Rare Crystal Plate Helm                 1110011001101010   E66A
+Very Rare Crystal Ring                       1110010001100001   E461
+Very Rare Crystal Scale Gauntlets            1110101001111010   EA7A
+Very Rare Dragon Leather Boots               1100110001111100   CC7C
+Very Rare Dragon Leather Bracers             1100100101110101   C975
+Very Rare Dragon Leather Gauntlets           1100101001111000   CA78
+Very Rare Dragon Leather Helm                1100011001100111   C667
+Very Rare Dragon Leather Mail                1100011101101111   C76F
+Very Rare Gold Amulet                        0100010101100010   4562
+Very Rare Gold Ring                          0100010001100001   4461
+Very Rare Meteoric Amulet                    0111010101100010   7562
+Very Rare Meteoric Cuirass                   0111100001110010   7872
+Very Rare Meteoric Full Helm                 0111011001101001   7669
+Very Rare Meteoric Helm                      0111011001100110   7666
+Very Rare Meteoric Plate Boots               0111110001111110   7C7E
+Very Rare Meteoric Plate Bracers             0111100101110110   7976
+Very Rare Meteoric Plate Cuirass             0111100001110011   7873
+Very Rare Meteoric Plate Helm                0111011001101010   766A
+Very Rare Meteoric Ring                      0111010001100001   7461
+Very Rare Meteoric Scale Gauntlets           0111101001111010   7A7A
+Very Rare Meteoric Scale Mail                0111011101110001   7771
+Very Rare None Cap                           1111011001100100   F664
+Very Rare None Cape                          1111100001101100   F86C
+Very Rare None Dress                         1111011101101110   F76E
+Very Rare None Gloves                        1111101001110111   FA77
+Very Rare None Hat                           1111011001100011   F663
+Very Rare None Low Hat                       1111011001100101   F665
+Very Rare None Shoes                         1111110001111011   FC7B
+Book Air                                     0000111000000001   0E01
+Book Astral                                  0000111000000101   0E05
+Book Earth                                   0000111000000100   0E04
+Book Fire                                    0000111000000011   0E03
+Book Water                                   0000111000000010   0E02
+Potion Antipoison                            0000111001000000   0E40
+Potion Big Healing                           0000111001000111   0E47
+Potion Big Mana                              0000111001001010   0E4A
+Potion Body                                  0000111001000001   0E41
+Potion Fighter Bonus                         0000111001001011   0E4B
+Potion Health Regeneration                   0000111001000101   0E45
+Potion Mage Bonus                            0000111001001100   0E4C
+Potion Mana Regeneration                     0000111001001000   0E48
+Potion Medium Healing                        0000111001000110   0E46
+Potion Medium Mana                           0000111001001001   0E49
+Potion Mind                                  0000111001000011   0E43
+Potion Reaction                              0000111001000010   0E42
+Potion Spirit                                0000111001000100   0E44
+Quest Amulet                                 0000111001010100   0E54
+Quest Banner                                 0000111001001110   0E4E
+Quest Crown1                                 0000111001001111   0E4F
+Quest Crown12                                0000111001010000   0E50
+Quest Crown13                                0000111001010001   0E51
+Quest Documents                              0000111001001101   0E4D
+Quest Head                                   0000111001010110   0E56
+Quest Ingredient                             0000111001010010   0E52
+Quest Map                                    0000111001010101   0E55
+Quest Meta1                                  0000111001011000   0E58
+Quest Meta2                                  0000111001011001   0E59
+Quest Meta3                                  0000111001011010   0E5A
+Quest Meta4                                  0000111001011011   0E5B
+Quest Ring                                   0000111001100000   0E60
+Quest RuneA                                  0000111001011100   0E5C
+Quest RuneE                                  0000111001011101   0E5D
+Quest RuneF                                  0000111001011110   0E5E
+Quest RuneW                                  0000111001011111   0E5F
+Quest Stone                                  0000111001010111   0E57
+Quest Treasure                               0000111001010011   0E53
+Scroll Acid Stream                           0000111000001110   0E0E
+Scroll Bless                                 0000111000011001   0E19
+Scroll Blizzard                              0000111000001100   0E0C
+Scroll Control Spirit                        0000111000011011   0E1B
+Scroll Curse                                 0000111000100001   0E21
+Scroll Darkness                              0000111000010011   0E13
+Scroll Diamond Dust                          0000111000010101   0E15
+Scroll Drain Life                            0000111000011111   0E1F
+Scroll Fire Arrow                            0000111000000110   0E06
+Scroll Fire Ball                             0000111000000111   0E07
+Scroll Fire Wall                             0000111000001000   0E08
+Scroll Haste                                 0000111000011010   0E1A
+Scroll Heal                                  0000111000011101   0E1D
+Scroll Ice Missile                           0000111000001010   0E0A
+Scroll Invisibility                          0000111000010001   0E11
+Scroll Light                                 0000111000010100   0E14
+Scroll Lightning                             0000111000001111   0E0F
+Scroll Poison Cloud                          0000111000001011   0E0B
+Scroll Prismatic Spray                       0000111000010000   0E10
+Scroll Protection from Air                   0000111000010010   0E12
+Scroll Protection from Earth                 0000111000011000   0E18
+Scroll Protection from Fire                  0000111000001001   0E09
+Scroll Protection from Water                 0000111000001101   0E0D
+Scroll Shield                                0000111000100000   0E20
+Scroll Slow                                  0000111000100010   0E22
+Scroll Stone Curse                           0000111000010111   0E17
+Scroll Summon                                0000111000011110   0E1E
+Scroll Teleport                              0000111000011100   0E1C
+Scroll Wall of Earth                         0000111000010110   0E16
+SuperScroll Acid Stream                      0000111000101011   0E2B
+SuperScroll Bless                            0000111000110110   0E36
+SuperScroll Blizzard                         0000111000101001   0E29
+SuperScroll Control Spirit                   0000111000111000   0E38
+SuperScroll Curse                            0000111000111110   0E3E
+SuperScroll Darkness                         0000111000110000   0E30
+SuperScroll Diamond Dust                     0000111000110010   0E32
+SuperScroll Drain Life                       0000111000111100   0E3C
+SuperScroll Fire Arrow                       0000111000100011   0E23
+SuperScroll Fire Ball                        0000111000100100   0E24
+SuperScroll Fire Wall                        0000111000100101   0E25
+SuperScroll Haste                            0000111000110111   0E37
+SuperScroll Heal                             0000111000111010   0E3A
+SuperScroll Ice Missile                      0000111000100111   0E27
+SuperScroll Invisibility                     0000111000101110   0E2E
+SuperScroll Light                            0000111000110001   0E31
+SuperScroll Lightning                        0000111000101100   0E2C
+SuperScroll Poison Cloud                     0000111000101000   0E28
+SuperScroll Prismatic Spray                  0000111000101101   0E2D
+SuperScroll Protection from Air              0000111000101111   0E2F
+SuperScroll Protection from Earth            0000111000110101   0E35
+SuperScroll Protection from Fire             0000111000100110   0E26
+SuperScroll Protection from Water            0000111000101010   0E2A
+SuperScroll Shield                           0000111000111101   0E3D
+SuperScroll Slow                             0000111000111111   0E3F
+SuperScroll Stone Curse                      0000111000110100   0E34
+SuperScroll Summon                           0000111000111011   0E3B
+SuperScroll Teleport                         0000111000111001   0E39
+SuperScroll Wall of Earth                    0000111000110011   0E33
+Bad Steel Large Shield                       0010001010100101   22A5
+Common Bronze Buckler                        0001001000000001   1201
+Common Bronze Small Shield                   0001001000000010   1202
+Common Hard Leather Large Shield             1011001000000110   B206
+Common Hard Leather Small Shield             1011001000000011   B203
+Common Iron Buckler                          0000001000000001   0201
+Common Iron Small Shield                     0000001000000010   0202
+Common Leather Large Shield                  1010001000000110   A206
+Common Leather Small Shield                  1010001000000011   A203
+Common Wood Large Shield                     1000001000000111   8207
+Common Wood Small Shield                     1000001000000100   8204
+Rare Adamantium Large Shield                 0110001001000101   6245
+Rare Adamantium Tower Shield                 0110001001001000   6248
+Rare Magic Wood Large Shield                 1001001001000111   9247
+Rare Magic Wood Small Shield                 1001001001000100   9244
+Rare Magic Wood Tower Shield                 1001001001001001   9249
+Rare Mithrill Large Shield                   0101001001000101   5245
+Rare Mithrill Small Shield                   0101001001000010   5242
+Rare Mithrill Tower Shield                   0101001001001000   5248
+Uncommon Bronze Small Shield                 0001001000100010   1222
+Uncommon Bronze Tower Shield                 0001001000101000   1228
+Uncommon Hard Leather Large Shield           1011001000100110   B226
+Uncommon Hard Leather Small Shield           1011001000100011   B223
+Uncommon Leather Large Shield                1010001000100110   A226
+Uncommon Leather Small Shield                1010001000100011   A223
+Uncommon Magic Wood Large Shield             1001001000100111   9227
+Uncommon Magic Wood Small Shield             1001001000100100   9224
+Uncommon Magic Wood Tower Shield             1001001000101001   9229
+Uncommon Steel Large Shield                  0010001000100101   2225
+Uncommon Steel Small Shield                  0010001000100010   2222
+Uncommon Steel Tower Shield                  0010001000101000   2228
+Uncommon Wood Large Shield                   1000001000100111   8227
+Uncommon Wood Small Shield                   1000001000100100   8224
+Uncommon Wood Tower Shield                   1000001000101001   8229
+Very Rare Adamantium Large Shield            0110001001100101   6265
+Very Rare Dragon Leather Large Shield        1100001001100110   C266
+Very Rare Dragon Leather Small Shield        1100001001100011   C263
+Bad Iron Axe                                 0000000110110010   01B2
+Bad Steel Short Sword                        0010000110100011   21A3
+Bad Wood Shaman Staff                        1000000110101110   81AE
+Common Bronze Axe                            0001000100010010   1112
+Common Bronze Dagger                         0001000100000010   1102
+Common Bronze Lance                          0001000100010001   1111
+Common Bronze Long Sword                     0001000100000100   1104
+Common Bronze Mace                           0001000100001001   1109
+Common Bronze Morning Star                   0001000100001010   110A
+Common Bronze Pick Hammer                    0001000100001011   110B
+Common Bronze Pike                           0001000100001111   110F
+Common Bronze Short Sword                    0001000100000011   1103
+Common Bronze Spiked Club                    0001000100001000   1108
+Common Bronze Two Handed Axe                 0001000100010011   1113
+Common Bronze Two Handed Sword               0001000100000110   1106
+Common Bronze War Hammer                     0001000100001100   110C
+Common Iron Axe                              0000000100010010   0112
+Common Iron Dagger                           0000000100000010   0102
+Common Iron Lance                            0000000100010001   0111
+Common Iron Long Sword                       0000000100000100   0104
+Common Iron Mace                             0000000100001001   0109
+Common Iron Morning Star                     0000000100001010   010A
+Common Iron Pick Hammer                      0000000100001011   010B
+Common Iron Pike                             0000000100001111   010F
+Common Iron Short Sword                      0000000100000011   0103
+Common Iron Spiked Club                      0000000100001000   0108
+Common Iron Two Handed Axe                   0000000100010011   0113
+Common Iron Two Handed Sword                 0000000100000110   0106
+Common Iron War Hammer                       0000000100001100   010C
+Common Wood Club                             1000000100000111   8107
+Common Wood Crossbow                         1000000100010110   8116
+Common Wood Long Bow                         1000000100010101   8115
+Common Wood Shaman Staff                     1000000100001110   810E
+Common Wood Short Bow                        1000000100010100   8114
+Common Wood Staff                            1000000100001101   810D
+Elven Adamantium Dagger                      0110000110000010   6182
+Elven Adamantium Long Sword                  0110000110000100   6184
+Elven Adamantium Short Sword                 0110000110000011   6183
+Elven Adamantium Two Handed Sword            0110000110000110   6186
+Elven Magic Wood Long Bow                    1001000110010101   9195
+Elven Magic Wood Short Bow                   1001000110010100   9194
+Elven Magic Wood Staff                       1001000110001101   918D
+Elven Meteoric Dagger                        0111000110000010   7182
+Elven Meteoric Long Sword                    0111000110000100   7184
+Elven Meteoric Short Sword                   0111000110000011   7183
+Elven Meteoric Two Handed Sword              0111000110000110   7186
+Elven Mithrill Dagger                        0101000110000010   5182
+Elven Mithrill Long Sword                    0101000110000100   5184
+Elven Mithrill Short Sword                   0101000110000011   5183
+Elven Mithrill Two Handed Sword              0101000110000110   5186
+Good Magic Wood Long Bow                     1001000111010101   91D5
+Good Magic Wood Staff                        1001000111001101   91CD
+Good Silver Two Handed Sword                 0011000111000110   31C6
+Good Steel Long Sword                        0010000111000100   21C4
+Good Wood Staff                              1000000111001101   81CD
+Rare Adamantium Axe                          0110000101010010   6152
+Rare Adamantium Bastard Sword                0110000101000101   6145
+Rare Adamantium Crossbow                     0110000101010110   6156
+Rare Adamantium Dagger                       0110000101000010   6142
+Rare Adamantium Halberd                      0110000101010000   6150
+Rare Adamantium Long Sword                   0110000101000100   6144
+Rare Adamantium Mace                         0110000101001001   6149
+Rare Adamantium Morning Star                 0110000101001010   614A
+Rare Adamantium Pike                         0110000101001111   614F
+Rare Adamantium Short Sword                  0110000101000011   6143
+Rare Adamantium Two Handed Axe               0110000101010011   6153
+Rare Adamantium Two Handed Sword             0110000101000110   6146
+Rare Adamantium War Hammer                   0110000101001100   614C
+Rare Magic Wood Long Bow                     1001000101010101   9155
+Rare Magic Wood Shaman Staff                 1001000101001110   914E
+Rare Magic Wood Short Bow                    1001000101010100   9154
+Rare Mithrill Axe                            0101000101010010   5152
+Rare Mithrill Bastard Sword                  0101000101000101   5145
+Rare Mithrill Crossbow                       0101000101010110   5156
+Rare Mithrill Dagger                         0101000101000010   5142
+Rare Mithrill Halberd                        0101000101010000   5150
+Rare Mithrill Long Sword                     0101000101000100   5144
+Rare Mithrill Mace                           0101000101001001   5149
+Rare Mithrill Morning Star                   0101000101001010   514A
+Rare Mithrill Pike                           0101000101001111   514F
+Rare Mithrill Short Sword                    0101000101000011   5143
+Rare Mithrill Two Handed Axe                 0101000101010011   5153
+Rare Mithrill Two Handed Sword               0101000101000110   5146
+Rare Mithrill War Hammer                     0101000101001100   514C
+Rare Silver Dagger                           0011000101000010   3142
+Uncommon Bronze Axe                          0001000100110010   1132
+Uncommon Bronze Dagger                       0001000100100010   1122
+Uncommon Bronze Long Sword                   0001000100100100   1124
+Uncommon Bronze Mace                         0001000100101001   1129
+Uncommon Bronze Morning Star                 0001000100101010   112A
+Uncommon Bronze Pick Hammer                  0001000100101011   112B
+Uncommon Bronze Pike                         0001000100101111   112F
+Uncommon Bronze Short Sword                  0001000100100011   1123
+Uncommon Bronze Spiked Club                  0001000100101000   1128
+Uncommon Bronze Two Handed Axe               0001000100110011   1133
+Uncommon Bronze Two Handed Sword             0001000100100110   1126
+Uncommon Bronze War Hammer                   0001000100101100   112C
+Uncommon Magic Wood Club                     1001000100100111   9127
+Uncommon Magic Wood Long Bow                 1001000100110101   9135
+Uncommon Magic Wood Shaman Staff             1001000100101110   912E
+Uncommon Magic Wood Short Bow                1001000100110100   9134
+Uncommon Magic Wood Staff                    1001000100101101   912D
+Uncommon Steel Axe                           0010000100110010   2132
+Uncommon Steel Bastard Sword                 0010000100100101   2125
+Uncommon Steel Crossbow                      0010000100110110   2136
+Uncommon Steel Dagger                        0010000100100010   2122
+Uncommon Steel Halberd                       0010000100110000   2130
+Uncommon Steel Long Sword                    0010000100100100   2124
+Uncommon Steel Mace                          0010000100101001   2129
+Uncommon Steel Morning Star                  0010000100101010   212A
+Uncommon Steel Pick Hammer                   0010000100101011   212B
+Uncommon Steel Pike                          0010000100101111   212F
+Uncommon Steel Short Sword                   0010000100100011   2123
+Uncommon Steel Spiked Club                   0010000100101000   2128
+Uncommon Steel Two Handed Axe                0010000100110011   2133
+Uncommon Steel Two Handed Sword              0010000100100110   2126
+Uncommon Steel War Hammer                    0010000100101100   212C
+Uncommon Wood Club                           1000000100100111   8127
+Uncommon Wood Long Bow                       1000000100110101   8135
+Uncommon Wood Shaman Staff                   1000000100101110   812E
+Uncommon Wood Short Bow                      1000000100110100   8134
+Uncommon Wood Staff                          1000000100101101   812D
+Very Rare Adamantium Axe                     0110000101110010   6172
+Very Rare Adamantium Crossbow                0110000101110110   6176
+Very Rare Adamantium Dagger                  0110000101100010   6162
+Very Rare Adamantium Halberd                 0110000101110000   6170
+Very Rare Adamantium Long Sword              0110000101100100   6164
+Very Rare Adamantium Pike                    0110000101101111   616F
+Very Rare Adamantium Short Sword             0110000101100011   6163
+Very Rare Adamantium Two Handed Axe          0110000101110011   6173
+Very Rare Adamantium Two Handed Sword        0110000101100110   6166
+Very Rare Crystal Axe                        1110000101110010   E172
+Very Rare Crystal Long Sword                 1110000101100100   E164
+Very Rare Crystal Mace                       1110000101101001   E169
+Very Rare Crystal Morning Star               1110000101101010   E16A
+Very Rare Crystal Pike                       1110000101101111   E16F
+Very Rare Crystal Two Handed Axe             1110000101110011   E173
+Very Rare Crystal Two Handed Sword           1110000101100110   E166
+Very Rare Crystal War Hammer                 1110000101101100   E16C
+Very Rare Gold Dagger                        0100000101100010   4162
+Very Rare Magic Wood Shaman Staff            1001000101101110   916E
+Very Rare Magic Wood Staff                   1001000101101101   916D
+Very Rare Meteoric Axe                       0111000101110010   7172
+Very Rare Meteoric Crossbow                  0111000101110110   7176
+Very Rare Meteoric Dagger                    0111000101100010   7162
+Very Rare Meteoric Halberd                   0111000101110000   7170
+Very Rare Meteoric Long Sword                0111000101100100   7164
+Very Rare Meteoric Mace                      0111000101101001   7169
+Very Rare Meteoric Morning Star              0111000101101010   716A
+Very Rare Meteoric Pike                      0111000101101111   716F
+Very Rare Meteoric Short Sword               0111000101100011   7163
+Very Rare Meteoric Two Handed Axe            0111000101110011   7173
+Very Rare Meteoric Two Handed Sword          0111000101100110   7166
+Very Rare Meteoric War Hammer                0111000101101100   716C

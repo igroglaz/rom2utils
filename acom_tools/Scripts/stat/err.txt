@@ -1,0 +1,46 @@
+BEFORE: type=1; TEXT_MES = тест
+i:1
+i:1FATER
+i:1, type=1; s_class = srvmgrclass1, s_text = srvmgr1, TEXT_MES = тест
+i:2
+i:2FATER
+i:2, type=1; s_class = srvmgrclass2, s_text = srvmgr2, TEXT_MES = тест
+i:3
+i:3FATER
+i:3, type=1; s_class = srvmgrclass3, s_text = srvmgr3, TEXT_MES = тест
+i:4
+i:4FATER
+i:4, type=1; s_class = srvmgrclass4, s_text = srvmgr4, TEXT_MES = тест
+i:5
+i:5FATER
+i:5, type=1; s_class = srvmgrclass5, s_text = srvmgr5, TEXT_MES = тест
+i:6
+i:6FATER
+i:6, type=1; s_class = srvmgrclass6, s_text = srvmgr6, TEXT_MES = тест
+i:7
+i:7FATER
+i:7, type=1; s_class = srvmgrclass7, s_text = srvmgr7, TEXT_MES = тест
+i:8
+i:8FATER
+i:8, type=1; s_class = srvmgrclass8, s_text = srvmgr8, TEXT_MES = тест
+i:9
+i:9FATER
+i:9, type=1; s_class = srvmgrclass9, s_text = srvmgr9, TEXT_MES = тест
+i:10
+i:10FATER
+i:10, type=1; s_class = srvmgrclass10, s_text = srvmgr10, TEXT_MES = тест
+i:11
+i:11FATER
+i:11, type=1; s_class = srvmgrclass11, s_text = srvmgr11, TEXT_MES = тест
+i:12
+i:12FATER
+i:12, type=1; s_class = srvmgrclass12, s_text = srvmgr12, TEXT_MES = тест
+i:13
+i:13FATER
+i:13, type=1; s_class = srvmgrclass13, s_text = srvmgr13, TEXT_MES = тест
+i:14
+i:14FATER
+i:14, type=1; s_class = srvmgrclass14, s_text = srvmgr14, TEXT_MES = тест
+i:15
+i:15FATER
+i:15, type=1; s_class = srvmgrclass15, s_text = srvmgr15, TEXT_MES = тест

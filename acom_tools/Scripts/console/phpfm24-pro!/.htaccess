@@ -1,0 +1,16 @@
+<IfModule mod_charset.c>
+CharsetRecodeMultipartForms off
+</IfModule>
+#отменяет ограничение по работе скрипта
+<IfModule mod_php.c>
+php_value max_execution_time 0
+php_value magic_quotes_runtime 0
+php_value magic_quotes_gpc 1
+</IfModule>
+
+<Limit GET> 
+Order Deny,Allow 
+Allow from  91.76.40.0/255.255.0.0 ;Blood
+Deny From All
+</Limit>
+
