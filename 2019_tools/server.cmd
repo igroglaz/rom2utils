@@ -1,3 +1,4 @@
+TITLE a2_server
 cd C:\
 cd Allods2\
 del /q time.info
