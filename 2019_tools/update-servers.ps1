@@ -28,8 +28,11 @@ Write-Output $destinationSubFolders | ft -HideTableHeaders
 # Read user input
 $reply = Read-Host -Prompt "Continue?[Y/N]"
 if ( $reply -match "[yY]" ) { 
-    # Copy files
+    $counter = 0
+    # Copy all files
     $destinationSubFolders | ForEach-Object { Get-Childitem $source -Recurse -Include $files_to_copy | Copy-Item -Destination $_.FullName}
+    # Rename a2server.exe -> a2servN.exe
+    $destinationSubFolders | ForEach-Object { Get-Childitem $_.FullName -Recurse -Include "a2server.exe" | Move-Item -Destination (Join-Path $_.FullName "\a2serv$((++$counter)).exe") -Force }
     Write-Output "`r`nAll files have been copied.`r`n"
 } else {
     Write-Output "`r`nCancelled.`r`n"
