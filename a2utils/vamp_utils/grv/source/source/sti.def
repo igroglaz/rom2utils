@@ -1,0 +1,13 @@
+EXPORTS
+IsPicture=IsPicture@12
+OpenPicture=OpenPicture@12
+OpenPage=OpenPage@8
+GetLine=GetLine@8
+GetPalette=GetPalette@4
+GetFormatInfo=GetFormatInfo@8
+
+CreatePicture=CreatePicture@12
+CreatePage=CreatePage@12
+DeletePage=DeletePage@4
+
+GetPluginInfo=GetPluginInfo@8

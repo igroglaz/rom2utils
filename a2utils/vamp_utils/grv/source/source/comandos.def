@@ -1,0 +1,7 @@
+EXPORTS
+IsPicture=IsPicture@12
+OpenPicture=OpenPicture@12
+OpenPage=OpenPage@8
+GetLine=GetLine@8
+GetPalette=GetPalette@4
+GetFormatInfo=GetFormatInfo@8

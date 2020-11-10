@@ -1,0 +1,184 @@
+                              GRV API
+                              ~~~~~~~      
+
+
+Экспортируемые функции
+~~~~~~~~~~~~~~~~~~~~~~
+
+BOOL WINAPI _export IsPicture(char *Name, BYTE *Data, int DataSize);
+Проверка, является ли файл рисунком.
+Входные параметры:
+  Name     - Полный путь рисунка.
+  Data     - Область памяти, куда этот рисунок прочитан.
+  DataSize - Длина рисунка.
+
+BOOL WINAPI _export GetFormatInfo(int Type, struct TFormatPar *Par);
+Получить параметры формата
+Входные параметры:
+  Type - Тип.
+Выходные параметры:
+  Par  - Параметры формата. Структура должна заполняться плагином.
+
+BOOL WINAPI _export GetPluginInfo(TPluginInfo *Info, TGrvApiInfo *ApiInfo);
+Получить информацию о плагине и передать адреса сервисных функций.
+Входные параметры:
+  ApiInfo - Структура с адресами сервисных функций.
+Выходные параметры:
+  Info - Информация о плагине. Должна заполняться плагином.
+
+BOOL WINAPI _export OpenPicture(BYTE *Data, int DataSize, struct TPicPar *Par);
+Открыть рисунок и подготовить его к чтению.
+Входные параметры:
+  Data     - Область памяти, куда этот рисунок прочитан.
+  DataSize - Длина рисунка.
+Выходные параметры:
+  Par      - Параметры рисунка. Структура должна заполняться плагином.
+
+BOOL WINAPI _export CreatePicture(int Type, BYTE *Data, int DataSize);
+
+int WINAPI _export OpenPage(int Page, struct PagePar *Par);
+Открыть страницу и подготовить ее к чтению функцией GetLine.
+Входные параметры:
+  Page - Номер открываемой страницы.
+Выходные параметры:
+  Par  - Параметры страницы. Структура должна заполняться плагином.
+
+int WINAPI _export CreatePage(int Index, BYTE *Lines[], struct TPagePar *Par);
+Создать новую страницу.
+Входные параметры:
+  Index - Номер страницы.
+  Lines - Массив линий. Пикселы 24 битные.
+  Par   - Параметры страницы.
+
+int WINAPI _export DeletePage(int Index);
+Удалить страницу.
+Входные параметры:
+  Index - Номер страницы.
+
+BOOL WINAPI _export GetLine(BYTE *Line, int Width);
+Получить текущюю линию рисунка.
+Входные параметры:
+  Width - Ширина страницы в пикселах. Параметр передается сюда на всякий
+    случай, чтобы плагин не пытался записать больше.
+Выходные параметры:
+  Line  - Сюда плагин должен скопировать очередную растровую линию из рисунка.
+
+BOOL WINAPI _export GetPalette(PALETTEENTRY *Pal);
+Получить палитру 256 цветного рисунка.
+Выходные параметры:
+  Palette - Массив PALETTEENTRY[256] - должен заполняться плагином;
+
+BOOL WINAPI _export ClosePage();
+BOOL WINAPI _export ClosePicture();
+Необязательные функции закрытия страницы и рисунка.
+
+
+Все функции, кроме OpenPage должны возвращать TRUE при удачном завершении.
+OpenPage возвращает код ошибки или 0 при удачном завершении.
+Для корректной работы плагина обязательно выставьте Alignment=1
+
+
+Структуры
+~~~~~~~~~
+
+Структура параметров имаджа
+
+struct TPicPar   
+{
+  int Type;        //Тип.
+  int NumPages;    //Число страниц имаджа
+  int Depth;       //Глубина цвета (bit).
+  int Transparent; //Наличие прозрачности.
+  int Red;         //Компоненты цвета, который считается прозрачным.
+  int Green;
+  int Blue;
+};
+
+
+Структура, параметров страницы
+
+struct TPagePar    
+{
+  int Width;         //Ширина и высота, страницы.
+  int Height;
+  int DispX;         //Смещение странички. Довольно часто используются,
+  int DispY;         //если странички - кадры анимации.
+  int Red;           //Компоненты цвета, который считается прозрачным.
+  int Green;         //Используются только при вставке новой страницы в имадж.
+  int Blue;
+};
+
+Структура параметров формата
+
+struct TFormatPar
+{
+  char Game[MAX_INFO_LEN];         //Не используется. 
+  char FormatName[MAX_INFO_LEN];   //Имя формата
+  char TypeName[MAX_INFO_LEN];     //Тип формата
+  char DefaultMasks[MAX_INFO_LEN]; //Маска формата, обычно в виде "*.расширение"
+  char Coment[MAX_INFO_LEN];       //Не используется
+  int Depth;                       //Не используется
+  int Transparent;                 //Не используется
+  int CreateFlag;                  //Не используется
+};
+
+
+Структура параметров плагина. Сейчас не используется.
+
+struct TPluginInfo
+{
+};
+
+Структура с адресами сервисных функций.
+
+struct TGrvApiInfo
+{
+  void(* ShowInt)(char *Title, char *Caption0, int Var0, char *Caption1=NULL, int Var1=0);
+  VOID(* MoveMem)(PVOID Destination, CONST VOID *Source, DWORD Length);
+  VOID(* ZeroMem)(PVOID Destination, DWORD Length);
+  
+  BYTE *(* Insert)(PVOID Dest, PVOID Source, int Len, int *NewDataSize);
+
+  int (* Delete)(PVOID Dest, int Len);
+};
+
+
+Сервисные функции
+~~~~~~~~~~~~~~~~~
+
+Плагин может вызывать эти функции для манипуляции с данными рисунка, например,
+для вставки и удаления страниц.
+
+void ShowInt(char *Title, char *Caption0, int Var0, char *Caption1=NULL, int Var1=0);
+Выводит отладочное сообщение. Кроме заголовка содержит 2 строки с названием
+переменной и собственно самой переменной.
+Входные параметры:
+  Title   - Заголовок.
+  Caption0, Caption1 - Надписи к выводимым переменным.
+  Var0, Var1 - Выводимые переменные.
+
+VOID MoveMem(PVOID Destination, CONST VOID *Source, DWORD Length);
+VOID ZeroMem(PVOID Destination, DWORD Length);
+Полные аналоги функций MoveMemory и ZeroMemory из WIN32 API
+  
+BYTE *Insert(PVOID Dest, PVOID Source, int Len, int *NewDataSize);
+Вставить блок памяти по указанному адресу. Вставка возможна только в память, 
+занятую рисунком.
+Входные параметры:
+  Dest        - Место вставки блока памяти.
+  Source      - Адрес вставляемого блока.
+  Len         - Длина блока.
+Выходные параметры:
+  NewDataSize - Указатель на переменную, в которую запишется новая длина 
+                рисунка.
+Возвращаемое значение:
+  Новый адрес рисунка или NULL, если произошла ошибка.
+
+int Delete(PVOID Dest, int Len);
+Удалить блок памяти из области рисунка. Область памяти после удаляемого блока 
+  будет перезаписана по адресу удаляемого блока.
+Входные параметры:
+  Dest        - Адрес удаляемого блока памяти.
+  Len         - Длина блока.
+Возвращаемое значение:
+  Новая длина рисунка.

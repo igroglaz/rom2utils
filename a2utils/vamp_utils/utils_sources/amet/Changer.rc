@@ -1,0 +1,415 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Changer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_CONFIRM DIALOG  0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Please, confirm your choice!"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Yes",IDOK,26,65,50,14
+    DEFPUSHBUTTON   "&No",IDCANCEL,108,65,50,14
+    CTEXT           "Are you sure to proceed?",IDC_STATIC,7,36,172,19
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_CONFIRM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_VAMP                BITMAP                  "res\\vamp.bmp"
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral (Sys. Default) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUSD)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_SYS_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 242, 77
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Map Editing Tools"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Map Editing Tools  v.1.1 (light edition)",IDC_STATIC,50,
+                    18,119,8,SS_NOPREFIX
+    LTEXT           "http://vamp.restoration.ru",IDC_STATIC,107,60,128,10
+    DEFPUSHBUTTON   "OK",IDOK,184,15,51,14,WS_GROUP
+    LTEXT           "(c) 1999-2003 Andrey Makhovikov",IDC_STATIC,107,47,128,
+                    10
+    CONTROL         153,IDC_STATIC,"Static",SS_BITMAP,7,7,33,30
+END
+
+IDD_CHANGER_DIALOG DIALOGEX 0, 0, 319, 245
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Map Editing Tools (-Untitled-)"
+MENU IDR_CHANGER_MENU
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_XRANGE1,98,25,20,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_YRANGE1,118,25,20,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_XRANGE2,98,42,20,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_YRANGE2,118,42,20,13,ES_AUTOHSCROLL | ES_NUMBER
+    LISTBOX         IDC_LIST_TERRAIN,175,23,126,35,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_TABSTOP
+    LISTBOX         IDC_LIST_FROM,16,98,128,134,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_TABSTOP,WS_EX_CLIENTEDGE
+    LISTBOX         IDC_LIST_TO,175,97,128,134,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_TABSTOP,WS_EX_CLIENTEDGE
+    LTEXT           "REMOVE / CHANGE FROM:",IDC_STATIC,16,87,128,8
+    LTEXT           "PLACE / CHANGE TO:",IDC_STATIC,175,86,124,8
+    CTEXT           "(  X  ,  Y  )",IDC_STATIC,97,15,39,8
+    GROUPBOX        "Range",IDC_STATIC,79,6,74,62
+    GROUPBOX        "Objects",IDC_STATIC,7,72,304,166
+    GROUPBOX        "Terrain",IDC_STATIC,165,6,146,62
+    RTEXT           "1",IDC_STATIC,86,28,8,7
+    RTEXT           "2",IDC_STATIC,85,44,8,7
+    GROUPBOX        "Monster Groups",IDC_STATIC,7,6,61,62
+    EDITTEXT        IDC_EDIT_MGROUP,19,26,38,13,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER | NOT WS_TABSTOP
+END
+
+IDD_DIALOG_DENSITY DIALOG  0, 0, 175, 45
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Place Objects"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,118,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,118,24,50,14
+    EDITTEXT        IDC_EDIT_DENSITY,75,7,19,13,ES_NUMBER
+    LTEXT           "Density (0...100%)",IDC_STATIC,7,7,65,10
+    CONTROL         "Spin1",IDC_SPIN_DENSITY,"msctls_updown32",UDS_ARROWKEYS,
+                    95,7,11,13
+END
+
+IDD_DIALOG_ERRORLIST DIALOG  0, 0, 297, 151
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Error List"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Fix All",ID_BUTTON_FIXALL,240,7,50,14
+    LISTBOX         IDC_ERRORLIST,7,7,225,137,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "&Cancel",IDCANCEL,240,27,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 235
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_CHANGER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 311
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 238
+    END
+
+    IDD_DIALOG_DENSITY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 168
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+    END
+
+    IDD_DIALOG_ERRORLIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 290
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\map4.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,0,1
+ PRODUCTVERSION 1,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "Comments", "by Andrey Makhovikov AKA -Vampire-"
+            VALUE "CompanyName", "http://vamp.restoration.ru"
+            VALUE "FileDescription", "AMET MFC Application"
+            VALUE "FileVersion", "1, 1, 0, 1"
+            VALUE "InternalName", "AMET"
+            VALUE "LegalCopyright", "Copyright (C) 1999 Avalon Entertainment"
+            VALUE "LegalTrademarks", "by Andrey Makhovikov"
+            VALUE "OriginalFilename", "AMET.EXE"
+            VALUE "ProductName", "Map Editing Tools"
+            VALUE "ProductVersion", "1, 1, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_CHANGER_MENU MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...",                    ID_FILE_OPEN
+        MENUITEM "&Clear All",                  ID_FILE_MAKERIP
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo",                       ID_EDIT_UNDO
+        MENUITEM "&Redo",                       ID_EDIT_REDO155, GRAYED
+        MENUITEM "Select &All Map",             ID_EDIT_SELECTALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Verify Map",                 ID_TOOLS_VERIFY
+    END
+    POPUP "&Tiles"
+    BEGIN
+        MENUITEM "Place &Terrain",              ID_TOOLS_PLACETERRAIN
+        MENUITEM "Place &Special Tiles...",     ID_TOOLS_PLACESPECIALTILES
+        MENUITEM "Generate Landscape...",       ID_TILES_GENERATELANDSCAPE
+        , GRAYED
+        MENUITEM SEPARATOR
+        POPUP "S&lope"
+        BEGIN
+            MENUITEM "L&eft->Right",                ID_TILES_SLOPE_LEFTRIGHT
+            MENUITEM "&Right->Left",                ID_TILES_SLOPE_RIGHTLEFT
+            MENUITEM "&Top->Bottom",                ID_TILES_SLOPE_TOPBOTTOM
+            MENUITEM "&Bottom->Top",                ID_TILES_SLOPE_BOTTOMTOP
+        END
+        MENUITEM "&Randomize Altitude",         ID_TILES_RANDOMIZEALTITUDES
+        MENUITEM "Flatten Roads",               ID_TOOLS_FLATTENROADS
+        , GRAYED
+    END
+    POPUP "&Objects"
+    BEGIN
+        MENUITEM "&Place Objects...",           ID_TOOLS_PLACE
+        MENUITEM "&Remove Objects",             ID_TOOLS_REMOVEOBJECTS
+        MENUITEM "&Change Objects",             ID_TOOLS_CHANGE
+        MENUITEM SEPARATOR
+        MENUITEM "&Kill Duplicate Objects",     ID_TOOLS_KILLDUPLICATEOBJECTS
+
+        MENUITEM "K&ill Overlaps",              ID_OBJECTS_KILLOVERLAPS
+        MENUITEM "Remove &Traps",               ID_UNITS_REMOVETRAPS, GRAYED
+        MENUITEM SEPARATOR
+        POPUP "&Decorate"
+        BEGIN
+            MENUITEM "&Beach...",                   ID_OBJECTS_DECORATEBEACH_BEACH
+
+            MENUITEM "&Mountains...",               ID_OBJECTS_DECORATEBEACH_MOUNTAINS
+
+            MENUITEM "Custom...",                   ID_OBJECTS_DECORATEBEACH_CUSTOM
+            , GRAYED
+        END
+        POPUP "&Generate Forest"
+        BEGIN
+            MENUITEM "&Human",                      ID_TOOLS_GENERATEFOREST_HUMAN
+
+            MENUITEM "&Druid",                      ID_TOOLS_GENERATEFOREST_DRUID
+
+            MENUITEM "&Tropic",                     ID_OBJECTS_GENERATEFOREST_TROPIC
+
+            MENUITEM "&Necro",                      ID_TOOLS_GENERATEFOREST_NECRO
+
+            MENUITEM "Custom...",                   ID_TOOLS_GENERATEFOREST_CUSTOM
+            , GRAYED
+        END
+    END
+    POPUP "&Units"
+    BEGIN
+        MENUITEM "&Find Max Group",             ID_EDIT_FINDMAXGROUP
+        MENUITEM SEPARATOR
+        MENUITEM "&Remove All Units",           ID_UNITS_REMOVEALLUNITS
+        POPUP "&Change Units Level"
+        BEGIN
+            MENUITEM "&Up",                         ID_UNITS_CHANGELEVEL_UP
+            MENUITEM "&Down",                       ID_UNITS_CHANGELEVEL_DOWN
+
+            MENUITEM SEPARATOR
+            MENUITEM "Level 1",                     ID_CHANGELEVEL_TOLEVEL1
+            MENUITEM "Level 2",                     ID_CHANGELEVEL_TOLEVEL2
+            MENUITEM "Level 3",                     ID_CHANGELEVEL_TOLEVEL3
+            MENUITEM "Level 4",                     ID_CHANGELEVEL_TOLEVEL4
+            MENUITEM "Level 5",                     ID_CHANGELEVEL_LEVEL5
+            , GRAYED
+        END
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Contents",                   ID_HELP_CONTENTS
+        MENUITEM SEPARATOR
+        MENUITEM "&Web Page",                   ID_HELP_HOMEPAGE
+        MENUITEM "&About",                      ID_HELP_ABOUT
+    END
+END
+
+#endif    // Neutral (Sys. Default) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Changer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,142 @@
+[Software\Classes\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\DefaultIcon]
+DefaultValue=%ThemeDir%Allods2\a2icons.dll,5
+
+[Software\Classes\CLSID\{208D2C60-3AEA-1069-A2D7-08002B30309D}\DefaultIcon]
+DefaultValue=%ThemeDir%Allods2\a2icons.dll,4
+
+[Software\Classes\CLSID\{645FF040-5081-101B-9F08-00AA002F954E}\DefaultIcon]
+full=%ThemeDir%Allods2\a2icons.dll,6
+empty=%ThemeDir%Allods2\a2icons.dll,7
+
+[Software\Classes\CLSID\{450D8FBA-AD25-11D0-98A8-0800361B1103}\DefaultIcon]
+DefaultValue=%WinDir%SYSTEM\mydocs.dll,0
+
+[Control Panel\Cursors]
+Arrow=%ThemeDir%Allods2\Theme2\Sword.cur
+Help=%WinDir%cursors\help_1.cur
+AppStarting=%ThemeDir%Allods2\Theme2\Swordwait.ani
+Wait=%ThemeDir%Allods2\Theme2\sun.ani
+NWPen=%WinDir%cursors\pen_1.cur
+No=%ThemeDir%Allods2\Theme2\Disable.cur
+SizeNS=%ThemeDir%Allods2\Theme2\updown.cur
+SizeWE=%ThemeDir%Allods2\Theme2\horizont.cur
+Crosshair=%WinDir%cursors\cross_1.cur
+IBeam=%WinDir%cursors\beam_1.cur
+SizeNWSE=%ThemeDir%Allods2\Theme2\lftup.cur
+SizeNESW=%ThemeDir%Allods2\Theme2\rghtup.cur
+SizeAll=%ThemeDir%Allods2\Theme2\move.cur
+UpArrow=%WinDir%cursors\up_1.cur
+DefaultValue=
+
+[Control Panel\Desktop]
+Wallpaper=%ThemeDir%Allods2\Theme2\Back_1.jpg
+Pattern=
+TileWallpaper=0
+WallpaperStyle=0
+
+[AppEvents\Schemes\Apps\.Default\.Default\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme2\Sounds\defaultsound.wav
+
+[AppEvents\Schemes\Apps\.Default\AppGPFault\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme2\Sounds\programerror.wav
+
+[AppEvents\Schemes\Apps\.Default\Maximize\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme2\Sounds\maximize.wav
+
+[AppEvents\Schemes\Apps\.Default\MenuCommand\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme2\Sounds\menucommand.wav
+
+[AppEvents\Schemes\Apps\.Default\MenuPopup\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme2\Sounds\menupopup.wav
+
+[AppEvents\Schemes\Apps\.Default\Minimize\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme2\Sounds\minimize.wav
+
+[AppEvents\Schemes\Apps\.Default\Open\.Current]
+DefaultValue=
+
+[AppEvents\Schemes\Apps\.Default\Close\.Current]
+DefaultValue=
+
+[AppEvents\Schemes\Apps\.Default\MailBeep\.Current]
+DefaultValue=
+
+[AppEvents\Schemes\Apps\.Default\RestoreDown\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme2\Sounds\restoredown.wav
+
+[AppEvents\Schemes\Apps\.Default\RestoreUp\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme2\Sounds\restoreup.wav
+
+[AppEvents\Schemes\Apps\.Default\RingIn\.Current]
+DefaultValue=
+
+[AppEvents\Schemes\Apps\.Default\Ringout\.Current]
+DefaultValue=
+
+[AppEvents\Schemes\Apps\.Default\SystemAsterisk\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme2\Sounds\asterisk.wav
+
+[AppEvents\Schemes\Apps\.Default\SystemDefault\.Current]
+DefaultValue=
+
+[AppEvents\Schemes\Apps\.Default\SystemExclamation\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme2\Sounds\exclamation.wav
+
+[AppEvents\Schemes\Apps\.Default\SystemExit\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme2\Sounds\exitwindows.wav
+
+[AppEvents\Schemes\Apps\.Default\SystemHand\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme2\Sounds\criticalstop.wav
+
+[AppEvents\Schemes\Apps\.Default\SystemQuestion\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme2\Sounds\question.wav
+
+[AppEvents\Schemes\Apps\.Default\SystemStart\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme2\Sounds\startwindows.wav
+
+[AppEvents\Schemes\Apps\Explorer\EmptyRecycleBin\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme2\Sounds\emptyrecuclebin.wav
+
+[Metrics]
+IconMetrics=76 0 0 0 94 0 0 0 94 0 0 0 1 0 0 0 246 255 255 255 0 0 0 0 0 0 0 0 0 0 0 0 144 1 0 0 0 0 0 204 0 0 0 0 77 83 32 83 97 110 115 32 83 101 114 105 102 0 121 114 101 99 117 99 108 101 98 105 110 46 119 97 118 0 119 97
+NonclientMetrics=84 1 0 0 1 0 0 0 18 0 0 0 18 0 0 0 20 0 0 0 20 0 0 0 243 255 255 255 0 0 0 0 0 0 0 0 0 0 0 0 188 2 0 0 0 0 0 204 0 0 0 0 77 83 32 83 97 110 115 32 83 101 114 105 102 0 108 111 100 115 50 32 118 97 114 32 50 46 84 104 101 109 101 0 19 0 0 0 19 0 0 0 249 255 255 255 0 0 0 0 0 0 0 0 0 0 0 0 144 1 0 0 0 0 0 204 0 0 0 0 77 83 32 83 97 110 115 32 83 101 114 105 102 0 108 111 100 115 50 32 118 97 114 32 50 46 84 104 101 109 101 0 20 0 0 0 20 0 0 0 243 255 255 255 0 0 0 0 0 0 0 0 0 0 0 0 144 1 0 0 0 0 0 204 0 0 0 0 77 83 32 83 97 110 115 32 83 101 114 105 102 0 108 111 100 115 50 32 118 97 114 32 50 46 84 104 101 109 101 0 243 255 255 255 0 0 0 0 0 0 0 0 0 0 0 0 144 1 0 0 0 0 0 204 0 0 0 0 77 83 32 83 97 110 115 32 83 101 114 105 102 0 108 111 100 115 50 32 118 97 114 32 50 46 84 104 101 109 101 0 243 255 255 255 0 0 0 0 0 0 0 0 0 0 0 0 144 1 0 0 0 0 0 204 0 0 0 0 77 83 32 83 97 110 115 32 83 101 114 105 102 0 108 111 100 115 50 32 118 97 114 32 50 46 84 104 101 109 101 0
+
+[Control Panel\Colors]
+ActiveTitle=48 72 120
+Background=0 0 0
+Hilight=168 0 0
+HilightText=255 255 255
+TitleText=255 255 255
+Window=255 204 0
+WindowText=0 0 0
+Scrollbar=255 204 0
+InactiveTitle=168 0 0
+Menu=255 204 0
+WindowFrame=255 204 0
+MenuText=0 0 0
+ActiveBorder=255 204 0
+InactiveBorder=168 0 0
+AppWorkspace=255 204 0
+ButtonFace=255 204 0
+ButtonShadow=168 0 0
+GrayText=128 128 128
+ButtonText=0 0 0
+InactiveTitleText=192 192 192
+ButtonHilight=255 255 255
+ButtonDkShadow=168 0 0
+ButtonLight=255 204 0
+InfoText=0 255 0
+InfoWindow=0 128 0
+GradientActiveTitle=112 136 200
+GradientInactiveTitle=255 16 16
+
+[boot]
+SCRNSAVE.EXE=
+
+[WebView]
+WVLEFT.BMP=%ThemeDir%Allods2 var 2 WVLEFT.BMP
+WVLINE.GIF=%ThemeDir%Allods2 var 2 WVLINE.GIF
+WVLOGO.GIF=%ThemeDir%Allods2 var 2 WVLOGO.GIF
+
+[MasterThemeSelector]
+MTSM=DABJDKT

@@ -1,0 +1,142 @@
+[Software\Classes\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\DefaultIcon]
+DefaultValue=%ThemeDir%Allods2\a2icons.dll,3
+
+[Software\Classes\CLSID\{208D2C60-3AEA-1069-A2D7-08002B30309D}\DefaultIcon]
+DefaultValue=%ThemeDir%Allods2\a2icons.dll,1
+
+[Software\Classes\CLSID\{645FF040-5081-101B-9F08-00AA002F954E}\DefaultIcon]
+full=%ThemeDir%Allods2\a2icons.dll,0
+empty=%ThemeDir%Allods2\a2icons.dll,2
+
+[Software\Classes\CLSID\{450D8FBA-AD25-11D0-98A8-0800361B1103}\DefaultIcon]
+DefaultValue=%WinDir%SYSTEM\mydocs.dll,0
+
+[Control Panel\Cursors]
+Arrow=%ThemeDir%Allods2\Theme1\normal.cur
+Help=%WinDir%cursors\help_1.cur
+AppStarting=%ThemeDir%Allods2\Theme1\backgrund.ani
+Wait=%ThemeDir%Allods2\Theme1\wait.ani
+NWPen=%WinDir%cursors\pen_1.cur
+No=%ThemeDir%Allods2\Theme1\Disable.cur
+SizeNS=%ThemeDir%Allods2\Theme1\updown.cur
+SizeWE=%ThemeDir%Allods2\Theme1\horizont.cur
+Crosshair=%WinDir%cursors\cross_1.cur
+IBeam=%WinDir%cursors\beam_1.cur
+SizeNWSE=%ThemeDir%Allods2\Theme1\lftup.cur
+SizeNESW=%ThemeDir%Allods2\Theme1\rghtup.cur
+SizeAll=%ThemeDir%Allods2\Theme1\move.cur
+UpArrow=%WinDir%cursors\up_1.cur
+DefaultValue=
+
+[Control Panel\Desktop]
+Wallpaper=%ThemeDir%Allods2\Theme1\Back_2.jpg
+Pattern=
+TileWallpaper=0
+WallpaperStyle=0
+
+[AppEvents\Schemes\Apps\.Default\.Default\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme1\Sound\blizzard.wav
+
+[AppEvents\Schemes\Apps\.Default\AppGPFault\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme1\Sound\freeze.wav
+
+[AppEvents\Schemes\Apps\.Default\Maximize\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme1\Sound\Scrollup.wav
+
+[AppEvents\Schemes\Apps\.Default\MenuCommand\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme1\Sound\Put_on.wav
+
+[AppEvents\Schemes\Apps\.Default\MenuPopup\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme1\Sound\Put_off.wav
+
+[AppEvents\Schemes\Apps\.Default\Minimize\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme1\Sound\Scrolldn.wav
+
+[AppEvents\Schemes\Apps\.Default\Open\.Current]
+DefaultValue=
+
+[AppEvents\Schemes\Apps\.Default\Close\.Current]
+DefaultValue=
+
+[AppEvents\Schemes\Apps\.Default\MailBeep\.Current]
+DefaultValue=
+
+[AppEvents\Schemes\Apps\.Default\RestoreDown\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme1\Sound\Put_off.wav
+
+[AppEvents\Schemes\Apps\.Default\RestoreUp\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme1\Sound\Put_on.wav
+
+[AppEvents\Schemes\Apps\.Default\RingIn\.Current]
+DefaultValue=
+
+[AppEvents\Schemes\Apps\.Default\Ringout\.Current]
+DefaultValue=
+
+[AppEvents\Schemes\Apps\.Default\SystemAsterisk\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme1\Sound\Click02.wav
+
+[AppEvents\Schemes\Apps\.Default\SystemDefault\.Current]
+DefaultValue=
+
+[AppEvents\Schemes\Apps\.Default\SystemExclamation\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme1\Sound\Error.wav
+
+[AppEvents\Schemes\Apps\.Default\SystemExit\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme1\Sound\Bird2.wav
+
+[AppEvents\Schemes\Apps\.Default\SystemHand\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme1\Sound\explosion.WAV
+
+[AppEvents\Schemes\Apps\.Default\SystemQuestion\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme1\Sound\Mcomplet.wav
+
+[AppEvents\Schemes\Apps\.Default\SystemStart\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme1\Sound\2.wav
+
+[AppEvents\Schemes\Apps\Explorer\EmptyRecycleBin\.Current]
+DefaultValue=%ThemeDir%Allods2\Theme1\Sound\acid.wav
+
+[Metrics]
+IconMetrics=76 0 0 0 94 0 0 0 94 0 0 0 1 0 0 0 246 255 255 255 0 0 0 0 0 0 0 0 0 0 0 0 144 1 0 0 0 0 0 204 0 0 0 0 77 83 32 83 97 110 115 32 83 101 114 105 102 0 119 97 118 0 119 97 118 0 119 97 118 0 0 0 0 0 0 0
+NonclientMetrics=84 1 0 0 1 0 0 0 18 0 0 0 18 0 0 0 20 0 0 0 20 0 0 0 243 255 255 255 0 0 0 0 0 0 0 0 0 0 0 0 188 2 0 0 0 0 0 204 0 0 0 0 77 83 32 83 97 110 115 32 83 101 114 105 102 0 108 111 100 115 50 32 118 97 114 32 49 46 84 104 101 109 101 0 19 0 0 0 19 0 0 0 249 255 255 255 0 0 0 0 0 0 0 0 0 0 0 0 144 1 0 0 0 0 0 204 0 0 0 0 77 83 32 83 97 110 115 32 83 101 114 105 102 0 108 111 100 115 50 32 118 97 114 32 49 46 84 104 101 109 101 0 20 0 0 0 20 0 0 0 243 255 255 255 0 0 0 0 0 0 0 0 0 0 0 0 144 1 0 0 0 0 0 204 0 0 0 0 77 83 32 83 97 110 115 32 83 101 114 105 102 0 108 111 100 115 50 32 118 97 114 32 49 46 84 104 101 109 101 0 243 255 255 255 0 0 0 0 0 0 0 0 0 0 0 0 144 1 0 0 0 0 0 204 0 0 0 0 77 83 32 83 97 110 115 32 83 101 114 105 102 0 108 111 100 115 50 32 118 97 114 32 49 46 84 104 101 109 101 0 243 255 255 255 0 0 0 0 0 0 0 0 0 0 0 0 144 1 0 0 0 0 0 204 0 0 0 0 77 83 32 83 97 110 115 32 83 101 114 105 102 0 108 111 100 115 50 32 118 97 114 32 49 46 84 104 101 109 101 0
+
+[Control Panel\Colors]
+ActiveTitle=48 100 72
+Background=0 0 0
+Hilight=160 96 0
+HilightText=255 255 255
+TitleText=255 255 255
+Window=255 200 120
+WindowText=0 0 0
+Scrollbar=255 200 120
+InactiveTitle=160 96 0
+Menu=255 200 120
+WindowFrame=0 0 0
+MenuText=0 0 0
+ActiveBorder=160 96 0
+InactiveBorder=160 96 0
+AppWorkspace=128 128 128
+ButtonFace=255 200 120
+ButtonShadow=160 96 0
+GrayText=128 128 128
+ButtonText=0 0 0
+InactiveTitleText=192 192 192
+ButtonHilight=255 255 255
+ButtonDkShadow=0 0 0
+ButtonLight=224 224 224
+InfoText=0 255 0
+InfoWindow=0 128 0
+GradientActiveTitle=0 128 104
+GradientInactiveTitle=255 200 120
+
+[boot]
+SCRNSAVE.EXE=
+
+[WebView]
+WVLEFT.BMP=%ThemeDir%Allods2 var 1 WVLEFT.BMP
+WVLINE.GIF=%ThemeDir%Allods2 var 1 WVLINE.GIF
+WVLOGO.GIF=%ThemeDir%Allods2 var 1 WVLOGO.GIF
+
+[MasterThemeSelector]
+MTSM=DABJDKT
