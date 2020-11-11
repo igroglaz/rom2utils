@@ -1,0 +1,180 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033\deflangfe1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Arial;}{\f1\fmodern\fprq1\fcharset0 Courier New;}}
+{\colortbl ;\red255\green0\blue0;\red0\green0\blue255;\red255\green0\blue255;\red0\green128\blue0;\red128\green128\blue0;\red128\green0\blue128;}
+{\*\generator Msftedit 5.41.15.1515;}\viewkind4\uc1\pard\nowidctlpar\f0\fs20\par
+\par
+\b\fs52 rom_hat Notes:\b0\fs20\par
+\par
+\par
+\par
+\par
+\b\fs36 rom_hat.conf :\par
+\b0\fs20\par
+-The configuration file is set up to run line by line, meaning that whatever you put on line 1 will happen before whatever is on line 2.\par
+\par
+\par
+-The file comes preset with all of the possible options listed, line by line. Each option has a ' # ' in front of it, this is used to comment out the line, meaning that it will not be run. Simply delete the # in order to activate that line. (Commenting out the line with a # can also be really handy if you feel like making notes or reminders in your file)\par
+\par
+\b Option Breakdown:\par
+\pard\nowidctlpar\sb100\sa100\b0\par
+\b server = id | name | addr | map_addr\par
+\pard\nowidctlpar\b0 - This obviously enough the server line for your HAT. Much like the old HAT software, this is where you enter the connection and id information for all the servers, only with this new software there is the added map_addr section which is used to be able to host the HAT through a router.\par
+\par
+\b\tab example: \b0 (This example is as it would appear for a HAT set up on a home network)\b\par
+\b0\par
+\tab\tab\b old software:\b0\par
+\tab [Server2]\par
+\tab\cf1\b ID=1\cf0\b0\par
+\tab\cf2\b Name="Lithsrv1"\cf0\b0\par
+\tab\cf3\b IP=192.168.0.147:8002\cf0\b0\par
+\par
+\tab\tab\b new software:\b0\par
+\tab server = \cf1\b 101\cf0\b0  | \cf2\b Server 1\cf0\b0  | \cf3\b 192.168.0.147:8002\cf0\b0  | \cf4\b 192.168.0.147:8003\cf5\par
+\cf0\b0\par
+\tab\tab\b note: \b0 notice that each section is separated by a vertical line ' | '\par
+\tab\tab\tab -the last ip is only needed if you are hosting your HAT through a router. \tab\tab\tab otherwise that section is left blank and the server will handle itself.\par
+\par
+\tab\tab\b multiple servers:\par
+\par
+\b0\tab server = \cf1\b 101\cf0\b0  | \cf2\b Server 1\cf0\b0  | \cf3\b 192.168.0.147:8002\cf0\b0  | \cf4\b 192.168.0.147:8003\cf5\par
+\cf0\b0\tab server = \cf1\b 102\cf0\b0  | \cf2\b Server 2\cf0\b0  | \cf3\b 192.168.0.147:8004\cf0\b0  | \cf4\b 192.168.0.147:8005\cf5\par
+\cf0\b0\tab server = \cf1\b 103\cf0\b0  | \cf2\b Server 3\cf0\b0  | \cf3\b 192.168.0.147:8006\cf0\b0  | \cf4\b 192.168.0.147:8007\cf5\par
+\cf0\b0\par
+\tab\b\par
+\tab For Hosting a HAT on the internet through a router:\b0\par
+\par
+\tab First enter your router admin and either DMZ yourself or forward the ports rom2 is using. \tab (8000-8100 should do.)\tab\par
+\par
+\tab\tab\b Server Settings:\b0\par
+\tab server = \cf1\b 101\cf0\b0  | \cf2\b Server 1\cf0\b0  | \cf3\b 192.168.0.147:8002\cf0\b0  | \cf4\b <Your IP Here>:8003\cf5\par
+\cf0\b0\par
+\par
+\b silent = 0\par
+\b0 -This option writes server update information to the log only rather to the console window.\par
+-When this option is not included, every piece of information that is normally recorded in the HAT log file will also be shown in the HAT console window.\par
+\par
+\par
+\b hat_id = 1000\b0\par
+-This is the id of your HAT, if you are running multiple HAT's, this number must be different.\par
+\par
+\tab\b note:\b0  If you are transfering accounts from a previous HAT to this one, the HAT id must match the source HAT. (This can be really handy if you want to switch between a couple types of HAT style and gameplay but don't want to wipe peoples characters in case you choose to switch back. Characters created under one hat_id will not show up under the other, however they will still exist should the id be switched back.)\par
+\par
+\par
+\b log_path = ./rom_hat.log\b0\par
+-This sets the HAT log file name and location. If this option is not included the file name will default to rom_hat.log and will be located under the base directory that the rom2_hat is placed in.\par
+\par
+\par
+\b stat_path = ./rom_hat.stat\b0\par
+-This sets the Status File name and location. If this option is not included the file name will default to rom_hat.stat and will be located under the base directory that the rom2_hat is placed in.\par
+\par
+\tab\b rom_hat.stat (Display Format)\b0\par
+\cf1\b\f1\par
+server_id\cf0\tab\cf2 log_in_time\cf0\tab\cf3 char_id_1\tab char_id_2\cf0\tab\cf4 login_name\cf0\tab\cf6 char_name\cf0\b0\par
+\f0\par
+\tab\b example:\b0\par
+\par
+\cf1\b 101\cf0\tab\tab\cf2 1221936451\cf0\tab\cf3 735282210\tab 339\cf0\tab\tab\cf4 actathia\cf0\tab\cf6 James\par
+\cf0\b0\par
+\par
+\tab\b log_in_time:\b0  This is the players log in time displayed in unix time. You will need a script to convert it into a readable format.\par
+\par
+\tab\b char_id_1 & 2:\b0  This is the character file name (Char_id_1 + Char_id_2 + \ldblquote .a2c\rdblquote )\par
+\par
+\par
+\b servers_addr = 0.0.0.0\b0\par
+\b servers_port = 8001\b0\par
+-This is the IP address and Port for the HAT. It is used by each servers .cfg file to connect the the HAT. \par
+\par
+\b clients_addr = 0.0.0.0\par
+clients_port = 8000\b0\par
+\par
+I have yet to figure what use this serves\par
+\par
+\par
+\b hat_version = 7\b0\par
+\par
+This is the protocol version that the HAT will use. \par
+\par
+\b\tab Options include: (7/8/9/10)\b0\par
+\par
+\b hat_language = english\b0\par
+\par
+This is used to specify which game clients are allowed to connect to the HAT. rom2.exe or allods2.exe\par
+\par
+\b\tab Options include: (ru/rus/russian, en/eng/english)\b0\par
+\par
+\b\par
+any_version = 1\b0\par
+-Allows players to connect using both the rom2 and allods2 game clients (Must also have rom2server.exe patch applied to allow both clients.)\par
+\par
+\par
+\b output_codepage = cp1251\par
+\b0 -Sets the encoding for the server console output and logging. This is only important for displaying Russian symbols.\par
+\par
+\b\tab Options include: (koi8/koi8r/koi8-r, 866/cp866/dos, 1251/cp1251/win)\b0\par
+\par
+\par
+\b chr_base_path = ./chr/\b0\par
+-This sets the character/login directory. Defaults to chr_base\par
+\par
+\par
+\b ctl_path = ./ctl/\b0\par
+-This sets the control directory.\par
+\par
+\tab\b Info taken from Ex-lend's description:\par
+\b0\par
+\pard\nowidctlpar\sb100\sa100 If you place a file in this directory, the server will run an action, depending on the file name.\line File can have any extension, but the name should be one of the following: \par
+-shutdown - shuts the hat down, contents of file make no difference \par
+-createaccount - creates an account, first line is login name, second is password \par
+-changepassword - changes password, first line is login name, second is old password, third is new password\par
+-removeaccount - deletes account, first line is login name, second is password\par
+\pard\nowidctlpar\par
+If one of the commands fails, the HAT will create a file named: filebad_<oldfilename>in this directory\par
+\par
+\tab\b note:\b0  To manually create an account, simply create a text file with the login on the first line and password on the second and drop it into the ctl directory.\par
+\par
+\par
+\b autoreg_mode = 0\b0\par
+This setting allows players to register without any scripts. Any login attempts with an unknown login name are automatically created. (This is a very handy feature for those without web server knowledge. However it opens the potential for creating many garbage accounts/confusion due to mistypes)\par
+\par
+\par
+\par
+\b\fs36 Server End: (cfg)\b0\fs20\par
+\par
+Server layout is mostly the same as with the previous HAT\par
+\par
+\b\tab example:\b0\par
+\par
+\par
+\tab HatAddress=192.168.0.147:8001\tab\par
+; hat's address (Must be the same as designated in rom2hat.conf)\par
+\tab\par
+\tab IPAddress=192.168.0.147:8003\tab\par
+; "Server" address and port for clients (Must be the same as designated in rom2hat.conf)\par
+\tab\par
+\tab IPAddress2=192.168.0.147:8002\tab\par
+; Connect to hat from this address and port (Must be the same as designated in rom2hat.conf)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\b\fs36 Trouble Shooting:\fs20\par
+\b0\par
+\par
+\b When the rom_hat.conf file is opened, everything appears in a big mess on the first couple of lines:\b0\par
+\par
+\tab -This is what happens when you open the unmodified file in notepad. Try using wordpad or textpad instead. This problem should be eliminated after the first couple of edits\par
+\par
+\par
+\b I have my HAT set up in a different directory from my game installation and the servers won't start up:\b0\par
+\par
+\tab -When you use the .bat file to start the server, it seems to use the registry to locate the rom2server.exe and will run the server from that location. If your configuration files are at the same location that the registry says your rom2server.exe is then you shouldn't have any troubles.\par
+\par
+\par
+\b I tried to move the accounts from my old HAT software to the new one, but when I connect to an account, all the characters are gone:\b0\par
+\par
+\tab -This is because the HAT id for your old HAT and the HAT id for the new one weren\rquote t set to the same. Solution: double check your old settings and ensure HAT id\rquote s match. (The Nival HAT software has the HAT id set to 2000 by default. Exlend\rquote s defaults to 1000)\par
+\par
+}
+ 
