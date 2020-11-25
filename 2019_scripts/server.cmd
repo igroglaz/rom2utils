@@ -2,9 +2,6 @@ TITLE a2_server
 cd C:\
 cd Allods2\
 del /q time.info
-set reset_time="03:30"
-echo "[%date%, %time%] Starting a deffered task to kill Allods Server # %1 at %reset_time%" >> allods2.log
-schtasks /create /f /tn "KillAllodsServer%1" /sc daily /st %reset_time% /tr "C:\Allods2\stop_server.cmd %1"
 cd Server%1
 :a
 del /q time.info
