@@ -1,0 +1,43 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\1C\Allods 2]
+"INSTALLDIR"="C:\\Allods 2"
+"CD"="C:"
+"CDSPEED"="-8x"
+"OK"=dword:00000000
+"SoundRandom"=dword:00000000
+"SoundMusPos"=dword:ffffec78
+"SoundSfxPos"=dword:ffffec78
+"SoundSpeechPos"=dword:ffffec78
+"MusicEnabled"=dword:00000000
+"GameSpeed"=dword:00000004
+"FormationMode"=dword:00000001
+"WimpyMode"=dword:00000000
+"ShowAllHitPoints"=dword:00000001
+"Smoothing"=dword:00000001
+"ShowFlyingHP"=dword:00000001
+"ShowTimeFlow"=dword:00000001
+"TipsMode"=dword:00000000
+"AutoCasting"=dword:00000019
+"Acknowledgement"=dword:00000000
+"Shadows"=dword:00000001
+"Lighting"=dword:00000001
+"Animation"=dword:00000001
+"ClanNames"=dword:00000001
+"MessageColors"=dword:00000000
+"lastprotocol"=dword:00000000
+"phonebooksize"=dword:00000000
+"comportsettings"=hex:01,00,00,00,40,38,00,00,00,00,00,00,00,00,00,00,04,00,00,\
+  00
+"lastip"=""
+"hatip"="server.nival.com/cgi-shl/a2/srvlist.exe"
+"hatprogip"="hat.allods.net"
+"ishat"=dword:00000001
+"deathmatch"=dword:00000000
+"store"=dword:00000001
+"team"=dword:00000000
+"login"=""
+"password"=""
+"Using VxD"=dword:00000001
+"RESOLUTION"="-1024"
+
