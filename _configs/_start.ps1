@@ -12,13 +12,12 @@ while($true) {
     Start-Process -FilePath "cmd.exe" -ArgumentList "/c allods.cmd"
 
     # Step 2: Wait for the set time
-    do {
-        $current_hour = (Get-Date).Hour
-        $current_minute = (Get-Date).Minute
-        $current_time = $current_hour*60 + $current_minute
-        $restart_time = $restart_hour*60 + $restart_minute
-        Start-Sleep -Seconds 60
-    } until($current_time -ge $restart_time)
+    $current_hour = (Get-Date).Hour
+    $current_minute = (Get-Date).Minute
+    $current_time = $current_hour*60 + $current_minute
+    $restart_time = $restart_hour*60 + $restart_minute
+    $waiting_time = ($restart_time - $current_time + 24*60) % (24*60)
+    Start-Sleep -Seconds ($waiting_time * 60)
 
     # Step 3: Server restart notice
     for ($j = 30; $j -ge 11; $j -= 5) {
