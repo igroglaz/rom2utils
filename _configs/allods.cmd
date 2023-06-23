@@ -1,4 +1,3 @@
-start /w kill.cmd
 TITLE a2_launcher
 start /BELOWNORMAL hat2.cmd
 sleep 15
@@ -15,6 +14,12 @@ sleep 5
 start /BELOWNORMAL server.cmd 6
 sleep 5
 start /BELOWNORMAL server.cmd 7
+sleep 5
+start /BELOWNORMAL server.cmd 8
+sleep 5
+start /BELOWNORMAL server.cmd 9
+sleep 5
+start /BELOWNORMAL server.cmd 10
 sleep 5
 rem start /BELOWNORMAL server.cmd 8
 rem sleep 5
