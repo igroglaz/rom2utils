@@ -6,7 +6,8 @@ while($true) {
     # Step 0: Kill existing processes
     Set-Location "C:\Allods2\"
     Start-Process -FilePath "cmd.exe" -ArgumentList "/c kill.cmd"
-    Start-Sleep -Seconds 5
+    # Additional delay to prevent double restart
+    Start-Sleep -Seconds 60
 
     # Step 1: Start allods.cmd
     Start-Process -FilePath "cmd.exe" -ArgumentList "/c allods.cmd"
