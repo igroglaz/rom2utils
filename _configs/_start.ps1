@@ -7,7 +7,7 @@ while ($true) {
     Set-Location "C:\Allods2\"
     Start-Process -FilePath "cmd.exe" -ArgumentList "/c kill.cmd"
     # Additional delay to prevent double restart
-    Start-Sleep -Seconds 60
+    Start-Sleep -Seconds 71
 
     # Step 1: Start allods.cmd
     Start-Process -FilePath "cmd.exe" -ArgumentList "/c allods.cmd"
