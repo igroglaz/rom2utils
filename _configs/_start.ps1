@@ -16,34 +16,49 @@ while ($true) {
         
         if (Test-Path $filePath) {
             # Read the content of the file
-            $content = Get-Content -Path $filePath
+            $content = Get-Content -Path $filePath -Raw
+            $lines = $content -split "`r?`n"
 
             # Find the start and end of the [Maps] section
-            $startIndex = $content.IndexOf("[Maps]")
+            $startIndex = $lines.IndexOf("[Maps]")
             if ($startIndex -eq -1) { continue } # Skip if no [Maps] section
 
             $startIndex++
-            $endIndex = $content.IndexOf("[", $startIndex)
-            if ($endIndex -eq -1) {
-                $endIndex = $content.Length
-            } else {
-                $endIndex -= 1
+            $endIndex = $startIndex
+
+            while ($endIndex -lt $lines.Length -and ($lines[$endIndex] -eq "" -or $lines[$endIndex] -notmatch "^\[.*\]")) {
+                $endIndex++
             }
 
             # Extract the [Maps] section
-            $mapsSection = $content[$startIndex..$endIndex] -match "^maps.*"
+            $mapsSection = @()
+            for ($j = $startIndex; $j -lt $endIndex; $j++) {
+                if ($lines[$j] -match "^maps.*") {
+                    $mapsSection += $lines[$j]
+                }
+            }
+
+            if ($mapsSection.Count -eq 0) { continue } # Skip if no maps found
 
             # Shuffle the [Maps] section
             $shuffledMapsSection = $mapsSection | Sort-Object {Get-Random}
 
             # Rebuild the file content
             $newContent = @()
-            $newContent += $content[0..($startIndex - 1)]
+            $newContent += $lines[0..($startIndex - 1)]
             $newContent += $shuffledMapsSection
-            $newContent += $content[$endIndex..($content.Length - 1)]
+            if ($lines[$endIndex] -ne "") {
+                $newContent += ""  # Add a blank line before the next section if it's not already blank
+            }
+            $newContent += $lines[$endIndex..($lines.Length - 1)]
+
+            # Remove trailing empty lines
+            while ($newContent[-1] -eq "") {
+                $newContent = $newContent[0..($newContent.Length - 2)]
+            }
 
             # Write the new content back to the file
-            $newContent | Set-Content -Path $filePath
+            [System.IO.File]::WriteAllText($filePath, ($newContent -join "`r`n"))
         }
     }
 
