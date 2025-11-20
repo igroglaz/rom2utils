@@ -23,20 +23,32 @@ start /BELOWNORMAL server.cmd 9
 sleep 5
 start /BELOWNORMAL server.cmd 10
 sleep 5
-start /BELOWNORMAL server.cmd 11
-sleep 5
 rem start /LOW itemlog.cmd
 rem sleep 5
 
+@echo off
+setlocal enabledelayedexpansion
+
+echo.
+echo Monitoring started...
+echo.
+
 rem Check CPU usage and restart if necessary
 :check_cpu
-for /L %%i in (1,1,11) do (
-    set "process_name=a2serv%%i.exe"
-    for /f "tokens=2 delims==" %%p in ('wmic path Win32_PerfFormattedData_PerfProc_Process where "Name='%%~ni'" get PercentProcessorTime /value') do (
-        if %%p gtr 20 (
-            echo "[%date%, %time%] CPU usage of %%~ni is above 20%%, restarting..." >> C:\Allods2\allods2.log
-            taskkill /f /im %%~ni
+for /L %%i in (1,1,10) do (
+    set "cpu="
+    for /f "tokens=2 delims==" %%a in ('wmic path Win32_PerfFormattedData_PerfProc_Process where "Name='a2serv%%i'" get PercentProcessorTime /value 2^>nul ^| findstr /r "[0-9]"') do (
+        set "cpu=%%a"
+    )
+    if defined cpu (
+        set "cpu=!cpu: =!"
+        set /a cpunum=!cpu! 2>nul
+        if !cpunum! GTR 20 (
+            echo [%date%, %time%] CPU usage of a2serv%%i is !cpu!%%, restarting...
+            echo [%date%, %time%] CPU usage of a2serv%%i is !cpu!%%, restarting... >> C:\Allods2\allods2.log
+            taskkill /f /im a2serv%%i.exe >nul 2>&1
             sleep 5
+            start /BELOWNORMAL server.cmd %%i
         )
     )
 )
