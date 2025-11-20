@@ -1,5 +1,4 @@
 TITLE a2_launcher
-
 rem launch_servers
 start /BELOWNORMAL hat2.cmd
 sleep 15
@@ -29,6 +28,11 @@ rem sleep 5
 @echo off
 setlocal enabledelayedexpansion
 
+rem Initializing high CPU counters for each server
+for /L %%i in (1,1,10) do (
+    set "highcpu_%%i=0"
+)
+
 echo.
 echo Monitoring started...
 echo.
@@ -43,16 +47,31 @@ for /L %%i in (1,1,10) do (
     if defined cpu (
         set "cpu=!cpu: =!"
         set /a cpunum=!cpu! 2>nul
-        rem we use 30% CPU max because eg at 20% a large map load can cause a short spike
-        if !cpunum! GTR 30 (
-            echo [%date%, %time%] CPU usage of a2serv%%i is !cpu!%%, restarting...
-            echo [%date%, %time%] CPU usage of a2serv%%i is !cpu!%%, restarting... >> C:\Allods2\allods2.log
-            taskkill /f /im a2serv%%i.exe >nul 2>&1
-            sleep 5
-            start /BELOWNORMAL server.cmd %%i
+        
+        rem If CPU is above 20%
+        if !cpunum! GTR 20 (
+            set /a highcpu_%%i+=1
+            echo [%date%, %time%] a2serv%%i CPU: !cpu!%% ^(!highcpu_%%i! checks^)
+            
+            rem Kill the process only if CPU is high for 3 checks in a row (3 minutes)
+            if !highcpu_%%i! GEQ 3 (
+                echo [%date%, %time%] CPU usage of a2serv%%i is !cpu!%% for !highcpu_%%i! consecutive checks, restarting...
+                echo [%date%, %time%] CPU usage of a2serv%%i is !cpu!%% for !highcpu_%%i! consecutive checks, restarting... >> C:\Allods2\allods2.log
+                taskkill /f /im a2serv%%i.exe >nul 2>&1
+                sleep 5
+                start /BELOWNORMAL server.cmd %%i
+                set "highcpu_%%i=0"
+            )
+        ) else (
+            rem CPU is normal - reset counter
+            if !highcpu_%%i! GTR 0 (
+                echo [%date%, %time%] a2serv%%i CPU normalized: !cpu!%%
+            )
+            set "highcpu_%%i=0"
         )
     )
 )
+
 rem Wait for 1 minute before checking again
 sleep 60
 goto check_cpu
