@@ -43,7 +43,8 @@ for /L %%i in (1,1,10) do (
     if defined cpu (
         set "cpu=!cpu: =!"
         set /a cpunum=!cpu! 2>nul
-        if !cpunum! GTR 20 (
+        rem we use 30% CPU max because eg at 20% a large map load can cause a short spike
+        if !cpunum! GTR 30 (
             echo [%date%, %time%] CPU usage of a2serv%%i is !cpu!%%, restarting...
             echo [%date%, %time%] CPU usage of a2serv%%i is !cpu!%%, restarting... >> C:\Allods2\allods2.log
             taskkill /f /im a2serv%%i.exe >nul 2>&1

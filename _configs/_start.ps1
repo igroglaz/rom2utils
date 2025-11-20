@@ -5,7 +5,7 @@ $num_servers = 10
 while ($true) {
     # Step 0: Kill existing processes
     Set-Location "C:\Allods2\"
-    Start-Process -FilePath "cmd.exe" -ArgumentList "/c kill.cmd"
+    Start-Process -FilePath "cmd.exe" -ArgumentList "/c kill.cmd" -Wait
 
     # Delay to close existing servers
     Start-Sleep -Seconds 11
@@ -66,7 +66,7 @@ while ($true) {
     Start-Sleep -Seconds 60
 
     # Step 2: Start allods.cmd
-    Start-Process -FilePath "cmd.exe" -ArgumentList "/c allods.cmd"
+    Start-Process -FilePath "cmd.exe" -ArgumentList "/c allods.cmd" -Wait
 
     # Step 3: Wait for the set time
     $current_hour = (Get-Date).Hour
@@ -77,31 +77,25 @@ while ($true) {
     Start-Sleep -Seconds ($waiting_time * 60)
 
     # Step 4: Server restart notice
-    $command = {
-        param($server, $message)
-        Start-Process -FilePath "cmd.exe" -ArgumentList "/c", "msg.cmd", "$server", "`"$message`""
-    }
-
+    $msgCmd = "C:\Allods2\msg.cmd"
+    
     for ($j = 30; $j -ge 11; $j -= 5) {
-        1..$num_servers | ForEach-Object {
-            $i = $_
-            Invoke-Command -ScriptBlock $command -ArgumentList $i, "Server will restart in $j minutes"
+        for ($i = 1; $i -le $num_servers; $i++) {
+            & $msgCmd $i "Server will restart in $j minutes"
         }
         Start-Sleep -Seconds 300
     }
 
     for ($j = 10; $j -ge 2; $j -= 1) {
-        1..$num_servers | ForEach-Object {
-            $i = $_
-            Invoke-Command -ScriptBlock $command -ArgumentList $i, "Server will restart in $j minutes"
+        for ($i = 1; $i -le $num_servers; $i++) {
+            & $msgCmd $i "Server will restart in $j minutes"
         }
         Start-Sleep -Seconds 60
     }
 
     for ($j = 60; $j -ge 1; $j -= 10) {
-        1..$num_servers | ForEach-Object {
-            $i = $_
-            Invoke-Command -ScriptBlock $command -ArgumentList $i, "Server will restart in $j seconds"
+        for ($i = 1; $i -le $num_servers; $i++) {
+            & $msgCmd $i "Server will restart in $j seconds"
         }
         Start-Sleep -Seconds 10
     }
